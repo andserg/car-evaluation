@@ -1,9 +1,9 @@
 {
-  "name": "vue-cinema",
+  "name": "car-evaluation",
   "version": "1.0.0",
-  "description": "The Ultimate Vue.js Developers Course: Vue.js Cinema",
+  "description": "Diploma: Vue.js Car Evaluation",
   "main": "server.js",
-  "author": "Anthony Gore <anthony@vuejsdevelopers.com>",
+  "author": "Sergio Andronik <androniksergio@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/vuejsdevelopers/vuejs-cinema"
