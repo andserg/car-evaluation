@@ -36,13 +36,14 @@ function generateSessions(id) {
   return sessions.sort((a, b) => { if (a.time < b.time) { return - 1 } else { return a.time > b.time; } });
 }
 
-function cleanData(movie) {
-  if (movie.Rated === 'N/A' || movie.Rated === 'UNRATED' || movie.Rated === 'NOT RATED') {
-    let last = parseInt(movie.imdbID[movie.imdbID.length - 1]);
-    movie.Rated = last < 7 ? ( last < 4 ? 'G' : 'PG-13' ) : 'R';
-  }
-  return movie;
-}
+// example how to fetch data from API
+//  function cleanData(movie) {
+//   if (movie.Rated === 'N/A' || movie.Rated === 'UNRATED' || movie.Rated === 'NOT RATED') {
+//     let last = parseInt(movie.imdbID[movie.imdbID.length - 1]);
+//     movie.Rated = last < 7 ? ( last < 4 ? 'G' : 'PG-13' ) : 'R';
+//   }
+//   return movie;
+// }
 
 module.exports = {
   data: [],
@@ -60,8 +61,9 @@ module.exports = {
                   if (!response.data.Error) {
                     data.push({
                       id,
-                      movie: cleanData(response.data),
-                      sessions: generateSessions(id)
+                      carData: cleanData(response.data)
+                      //replace movie with carDara
+                      //riaId: generateId(id)
                     });
                   } else {
                     console.log(response.data.Error);
