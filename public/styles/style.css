@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+
+body {
+  background: linear-gradient(to top left, #b60007, #ffa71f) no-repeat;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+.container {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.container.header {
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
+
+.container.header img {
+    width: 100px;
+    height: 100px;
+}
+
+.container.header h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.column-result {
+  width: 49%;
+  min-height: 200px;
+  border: 1px solid #ededed;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 30px 15px;
+}
+
+.column-result p {
+    /*font-family: 'Orbitron', sans-serif;*/
+    padding-left: 30px;
+}
+
+.column-picker {
+  width: 49%;
+  min-height: 200px;
+  border: 1px solid #ededed;
+  display: flex;
+  flex-direction: column;
+  Justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.column-picker select, .column-picker input {
+    width: 60%;
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+    height: 40px;
+    background-color: #fff;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    color: #555;
+    border-radius: 2px;
+}
+
+.column-picker div p {
+    font-size: 14px;
+}
+
+.column-picker div p input[type="checkbox"] {
+    width: auto;
+    height: 15px;
+    margin-bottom: 4px;
+}
+
+.sizeOptions {
+    height: 300px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.button {
+  cursor: pointer;
+  width: 30%;
+  padding: 15px;
+  background-color: #fec722;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: none;
+  color: #000;
+  outline: none;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+.button:hover {
+  background-color: #755801;
+  color: #fff;
+}
+
+.notVisible {
+  display: none;
+}
